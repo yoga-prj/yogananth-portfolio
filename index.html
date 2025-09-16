@@ -1,135 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogananth VS Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yogananth VS — Portfolio</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Script -->
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">MyPortfolio</div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span>Yogananth VS</span></h1>
-            <p>AWS Certified Cloud Practitioner | UI/UX Designer | Graphic Designer</p>
-            <a href="#projects" class="btn">See My Work</a>
+  <!-- Fixed navbar -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">Yogananth VS</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="site-wrap">
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <img src="images/court.png" alt="Yogananth VS" class="hero-photo">
         </div>
+
+        <div class="hero-right">
+          <h1 class="hero-title">Hello, I'm <span class="accent">Yogananth VS</span></h1>
+          <p class="hero-sub-lg">AWS Certified Cloud Practitioner</p>
+          <div class="hero-ctas">
+            <a href="https://github.com/yoga-prj?tab=repositories" class="btn glass-btn">GitHub</a>
+            </a>
+            <a href="https://www.linkedin.com/in/yogananth-v-s-4b90a1268/" class="btn glass-btn">LinkedIn</a>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-inner">
         <h2>About Me</h2>
-        <p>As an AWS Certified Cloud Practitioner (CLF-C02), I bring a strong foundation in Cloud technologies and Application Development. With expertise in crafting engaging and functional digital experiences, I am dedicated to delivering solutions that align innovation with organizational goals.</p>
-        <div class="skills">
-            <div class="skill">AWS</div>
-            <div class="skill">Linux</div>
-            <div class="skill">CI/CD Pipelines</div>
-            <div class="skill">GitLab</div>
-            <div class="skill">Figma</div>
-        </div>
+        <p class="lead">
+          As an AWS Certified Cloud Practitioner (CLF-C02), I bring a strong foundation in cloud technologies and application development.
+          I focus on building maintainable systems and clear user experiences — 
+          bridging the gap between engineering and design.
+        </p>
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-inner">
+        <h2>Skills</h2>
+        <div class="skills-row">
+          <span class="skill">AWS (EC2, S3, IAM)</span>
+          <span class="skill">Python</span>
+          <span class="skill">Linux</span>
+          <span class="skill">CI/CD (GitLab)</span>
+          <span class="skill">UI/UX (Figma)</span>
+          <span class="skill">Databases (MySQL)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-inner">
         <h2>Education</h2>
-        <div class="education-grid">
-            <div class="education-card">
-                <h3>Vellore Institute of Technology</h3>
-                <p>Master of Computer Application</p>
-                <p>2022 - 2024</p>
-            </div>
-            <div class="education-card">
-                <h3>AM Jain College, Chennai</h3>
-                <p>Bachelor of Computer Science</p>
-                <p>2019 - 2022</p>
-            </div>
+        <div class="edu-grid">
+          <div class="edu-box">
+            <h3>Vellore Institute of Technology</h3>
+            <p class="edu-sub">Master of Computer Application</p>
+            <p class="edu-date">2022 — 2024</p>
+          </div>
+          <div class="edu-box">
+            <h3>AM Jain College, Chennai</h3>
+            <p class="edu-sub">Bachelor of Computer Science</p>
+            <p class="edu-date">2019 — 2022</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates">
-        <h2>My Certificates</h2>
-        <p>Certifications showcasing my skills in cloud technologies, Linux, and design.</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <h2>Projects</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Edumate</h3>
+            <p>(Education Mobile Platform)</p>
+            <div class="card-actions">
+              <a class="btn glass-btn" href="https://www.behance.net/gallery/217084401/Edumate-%28Education-Mobile-Platform%29" target="_blank">View on Behance</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Mobile Mart</h3>
+            <p>(E-commerce Application)</p>
+            <div class="card-actions">
+              <a class="btn glass-btn" href="https://www.behance.net/gallery/202361393/Mobile-Mart-%28E-commerce-Application%29" target="_blank">View on Behance</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>FUODAY</h3>
+            <p>(ATS Platform)</p>
+            <div class="card-actions">
+              <a class="btn glass-btn" href="https://www.behance.net/gallery/233182695/FUODAY-%28ATS-Platform%29" target="_blank">View on Behance</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+      <div class="section-inner">
+        <h2>Certificates</h2>
         <div class="certificate-grid">
             <div class="certificate-card">
                 <h3>AWS Certified Cloud Practitioner (CLF-C02)</h3>
-                <a href="https://www.credly.com/badges/078e08a2-2498-4a44-bbd4-33c2e8fbfef1/linked_in_profile" class="btn">View Certificate</a>
+                <a href="https://www.credly.com/badges/078e08a2-2498-4a44-bbd4-33c2e8fbfef1/linked_in_profile" class="btn glass-btn">View Certificate</a>
             </div>
             <div class="certificate-card">
                 <h3>Introduction to Cloud Computing on AWS</h3>
-                <a href="http://ude.my/UC-9804ef5d-8efc-44ca-bc20-a28afa9139ea" class="btn">View Certificate</a>
+                <a href="http://ude.my/UC-9804ef5d-8efc-44ca-bc20-a28afa9139ea" class="btn glass-btn">View Certificate</a>
             </div>
             <div class="certificate-card">
                 <h3>The Linux Command Line Bootcamp</h3>
-                <a href="http://ude.my/UC-baf751e2-1722-48be-b320-38aa3a76f650" class="btn">View Certificate</a>
-            </div>
-            <div class="certificate-card">
-                <h3>Figma UI/UX Design Essentials</h3>
-                <a href="http://ude.my/UC-728ed0ca-4b15-401c-a291-33794163fb90" class="btn">View Certificate</a>
+                <a href="http://ude.my/UC-baf751e2-1722-48be-b320-38aa3a76f650" class="btn glass-btn">View Certificate</a>
             </div>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My UI/UX Projects</h2>
-        <p>Check out my creative UI/UX designs on <a href="https://www.behance.net/ygrzz" target="_blank" style="color:#1e90ff; text-decoration:underline;">Behance</a>.</p>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Edumate (Education Mobile Platform)</p>
-                <a href="https://www.behance.net/gallery/217084401/Edumate-%28Education-Mobile-Platform%29" target="_blank" class="btn">View on Behance</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Mobile Mart (E-commerce Application)</p>
-                <a href="https://www.behance.net/gallery/202361393/Mobile-Mart-%28E-commerce-Application%29" target="_blank" class="btn">View on Behance</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>FUODAY (ATS Platform)</p>
-                <a href="https://www.behance.net/gallery/233182695/FUODAY-%28ATS-Platform%29" target="_blank" class="btn">View on Behance</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or projects.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <h2>Contact</h2>
+        <form id="contactForm" class="contact-form glass-contact-form" novalidate>
+          <input name="name" type="text" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+          <div class="form-actions">
+            <button class="btn submit-btn" type="submit">Send Message</button>
+          </div>
         </form>
-        <div class="socials">
-            <a href="https://gitlab.com/yoga_2001" target="_blank">
-                <img src="gitlab-icon.png" alt="GitLab" class="social-icon"> GitLab
-            </a>
-            <a href="https://www.linkedin.com/in/yogananth-v-s-4b90a1268/" target="_blank">
-                <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon"> LinkedIn
-            </a>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        &copy; 2025 Yogananth VS. All Rights Reserved. | <a href="https://www.behance.net/ygrzz" target="_blank" style="color:#1e90ff;">Behance</a>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© 2025 Yogananth VS — All rights reserved</p>
+      </div>
     </footer>
+  </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
