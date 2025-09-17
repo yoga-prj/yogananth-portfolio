@@ -22,7 +22,6 @@
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -68,12 +67,12 @@
       <div class="section-inner">
         <h2>Skills</h2>
         <div class="skills-row">
-          <span class="skill">AWS (EC2, S3, IAM)</span>
+          <span class="skill">AWS</span>
           <span class="skill">Python</span>
-          <span class="skill">Linux</span>
-          <span class="skill">CI/CD (GitLab)</span>
-          <span class="skill">UI/UX (Figma)</span>
+          <span class="skill">Linux (CLI)</span>
+          <span class="skill">CI/CD Pipelines</span>
           <span class="skill">Databases (MySQL)</span>
+          <span class="skill">Git & Version Control</span>
         </div>
       </div>
     </section>
@@ -93,36 +92,6 @@
             <p class="edu-sub">Bachelor of Computer Science</p>
             <p class="edu-date">2019 — 2022</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-inner">
-        <h2>Projects</h2>
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Edumate</h3>
-            <p>(Education Mobile Platform)</p>
-            <div class="card-actions">
-              <a class="btn glass-btn" href="https://www.behance.net/gallery/217084401/Edumate-%28Education-Mobile-Platform%29" target="_blank">View on Behance</a>
-            </div>
-          </article>
-          <article class="card">
-            <h3>Mobile Mart</h3>
-            <p>(E-commerce Application)</p>
-            <div class="card-actions">
-              <a class="btn glass-btn" href="https://www.behance.net/gallery/202361393/Mobile-Mart-%28E-commerce-Application%29" target="_blank">View on Behance</a>
-            </div>
-          </article>
-          <article class="card">
-            <h3>FUODAY</h3>
-            <p>(ATS Platform)</p>
-            <div class="card-actions">
-              <a class="btn glass-btn" href="https://www.behance.net/gallery/233182695/FUODAY-%28ATS-Platform%29" target="_blank">View on Behance</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -152,24 +121,27 @@
     <section id="contact" class="section">
       <div class="section-inner">
         <h2>Contact</h2>
-        <form id="contactForm" class="contact-form glass-contact-form" novalidate>
-          <input name="name" type="text" placeholder="Your name" required>
-          <input name="email" type="email" placeholder="Your email" required>
-          <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-          <div class="form-actions">
-            <button class="btn submit-btn" type="submit">Send Message</button>
-          </div>
+        <form action="https://formspree.io/f/mgvljyze" method="POST" class="contact-form">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>
+
 
     <!-- footer -->
     <footer class="footer">
       <div class="footer-inner">
         <p>© 2025 Yogananth VS — All rights reserved</p>
+        <div class="footer-contact">
+          <a href="tel:+916383925115">📞 6383925115</a> | 
+          <a href="mailto:yogananth188@gmail.com">✉️ yogananth188@gmail.com</a>
+        </div>
       </div>
     </footer>
   </main>
-
 </body>
 </html>
