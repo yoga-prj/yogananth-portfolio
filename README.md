@@ -62,14 +62,6 @@ yogananth-portfolio/
 
 ---
 
-## DevOps Skills Demonstrated
-- Version control with Git and GitHub  
-- Continuous Deployment (CI/CD) using GitHub Actions  
-- Deployment and configuration on Netlify  
-- Automation of website updates  
-
----
-
 ## How to Run Locally
 1. Clone the repository:  
 git clone https://github.com/yoga-prj/yogananth-portfolio.git
